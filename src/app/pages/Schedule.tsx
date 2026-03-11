@@ -64,7 +64,7 @@ const schedule: Record<string, Session[]> = {
     {
       time: "09:00 AM - 12:00 PM",
       title: "SDG",
-      desc: "Understand the Importance of Sustainable Development",
+      desc: "Understand the Importance of Sustainable Development.",
       venue: "SAC",
       type: "keynote",
     },
