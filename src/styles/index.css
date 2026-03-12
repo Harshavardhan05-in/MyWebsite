@@ -1,6 +1,7 @@
 @import './fonts.css';
-@import './tailwind.css';
 @import './theme.css';
+@import './tailwind.css';
+
 
 @layer components {
 .liquid-glass {
@@ -19,7 +20,7 @@
   backdrop-filter: blur(22px) saturate(150%);
   -webkit-backdrop-filter: blur(22px) saturate(150%);
 }
-}
+
 .liquid-glass::before {
   content: "";
   position: absolute;
@@ -66,7 +67,7 @@
   background: linear-gradient(120deg, rgba(108, 60, 255, 0.32), rgba(0, 212, 255, 0.22));
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 10px 28px rgba(0, 0, 0, 0.24);
 }
-
+}
 .intro-overlay {
   position: fixed;
   inset: 0;
