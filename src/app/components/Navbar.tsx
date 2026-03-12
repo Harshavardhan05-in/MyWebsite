@@ -35,8 +35,6 @@ export function Navbar() {
                 ANTAHPRAGNYA
               </span>
             </span>
-
-
           </Link>
 
           {/* Desktop nav */}
@@ -79,7 +77,7 @@ export function Navbar() {
                 {link.label}
               </Link>
             ))}
-            
+
           </div>
         </div>
       )}
