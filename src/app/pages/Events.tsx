@@ -3,65 +3,58 @@ import { GlassCard } from "../components/GlassCard";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { Search, MapPin, Clock, Users, X } from "lucide-react";
 
-const categories = ["All", "Technical", "Non-Technical", "Workshops", "Games"];
+const categories = ["All", "Technical", "Non-Technical", "Entertainment", "Games"];
 
 const events = [
   {
-    id: 1, title: "Hackathon 2026", category: "Technical",
-    desc: "48-hour coding marathon. Build innovative solutions for real-world problems and compete for amazing prizes.",
-    image: "https://images.unsplash.com/photo-1649451844813-3130d6f42f8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYWNrYXRob24lMjBjb2RpbmclMjBjb21wZXRpdGlvbnxlbnwxfHx8fDE3NzIyMDc2NDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    time: "April 15-16", venue: "Main Hall", team: "2-4 members", prize: "$5000",
-    rules: ["Teams of 2-4 members", "Original code only", "Any tech stack allowed", "24-hour submission deadline"],
-  },
-  {
-    id: 2, title: "RoboWars", category: "Technical",
+    id: 1, title: "Baha Games", category: "Games",
     desc: "Design and build robots to compete in an arena battle. Strategy, engineering, and destruction await!",
-    image: "https://images.unsplash.com/photo-1590038667005-7d82ac6f864b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyb2JvdGljcyUyMHdvcmtzaG9wJTIwdW5pdmVyc2l0eXxlbnwxfHx8fDE3NzIyNTgwMTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    time: "April 16", venue: "Arena B", team: "3-5 members", prize: "$3000",
+    image: "/events/robots.jpg",
+    time: "March 14", venue: "SAC Auditorium",  
     rules: ["Robot weight limit: 10kg", "No projectile weapons", "Remote controlled only", "3-minute rounds"],
   },
   {
-    id: 3, title: "E-Sports Arena", category: "Games",
+    id: 2, title: "VR Games", category: "Games",
     desc: "Competitive gaming tournament featuring popular titles with massive prize pools.",
-    image: "https://images.unsplash.com/photo-1759701546851-1d903ac1a2e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnYW1pbmclMjBlc3BvcnRzJTIwdG91cm5hbWVudHxlbnwxfHx8fDE3NzIyNTgwMTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    time: "April 15-17", venue: "Gaming Zone", team: "Solo / 5-member squad", prize: "$4000",
+    image: "/events/vrgames.jpg",
+    time: "March 14", venue: "SAC Auditorium", 
     rules: ["Bring your own peripherals", "Anti-cheat monitored", "Swiss format rounds", "Fair play policy enforced"],
   },
   {
-    id: 4, title: "AI Workshop", category: "Workshops",
+    id: 3, title: "Trinayana Night", category: "Entertainment",
     desc: "Hands-on workshop covering machine learning fundamentals and building AI-powered applications.",
-    image: "https://images.unsplash.com/photo-1761223976379-04c361d3068a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxBSSUyMGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2UlMjB2aXN1YWxpemF0aW9ufGVufDF8fHx8MTc3MjE3NTU2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-    time: "April 15", venue: "Lab 201", team: "Individual", prize: "Certificate",
+    image: "/events/trinayana.jpg",
+    time: "March 14", venue: "SAC Auditorium",
     rules: ["Laptop required", "Basic Python knowledge", "Pre-registration mandatory", "Limited to 100 seats"],
   },
   {
-    id: 5, title: "CTF Challenge", category: "Technical",
+    id: 4, title: "Shark Tank", category: "",
     desc: "Capture the Flag cybersecurity competition. Hack, defend, and solve security puzzles.",
-    image: "https://images.unsplash.com/photo-1769092186388-06be4308162b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjeWJlcnNlY3VyaXR5JTIwaGFja2luZyUyMGRhcmt8ZW58MXx8fHwxNzcyMjU4MDE0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-    time: "April 16", venue: "Cyber Lab", team: "1-3 members", prize: "$2000",
+    image: "/events/sharktank.jpeg",
+    time: "March 15", venue: "SAC Auditorium",
     rules: ["No external tools during the event", "Points-based scoring", "Hints available at cost", "Time-limited challenges"],
   },
   {
-    id: 6, title: "VR Experience Zone", category: "Non-Technical",
-    desc: "Experience cutting-edge virtual reality demos and interactive installations.",
-    image: "https://images.unsplash.com/photo-1758273239313-6c703d089dd4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2aXJ0dWFsJTIwcmVhbGl0eSUyMGhlYWRzZXQlMjB0ZWNobm9sb2d5fGVufDF8fHx8MTc3MjI0ODkwMHww&ixlib=rb-4.1.0&q=80&w=1080",
-    time: "April 15-17", venue: "Exhibition Hall", team: "Individual", prize: "N/A",
+    id: 5, title: "Musical Night", category: "Entertainment",
+    desc: "A sneak peek performances by RAAGA BAND",
+    image: "/events/musicalnight.jpg",
+    time: "March 14", venue: "Exhibition Hall", team: "Individual", prize: "N/A",
     rules: ["Open to all attendees", "15-minute sessions", "First-come-first-served", "Safety briefing required"],
   },
-  {
-    id: 7, title: "Tech Expo", category: "Non-Technical",
-    desc: "Showcase of latest tech innovations, startups, and student projects.",
-    image: "https://images.unsplash.com/photo-1601571047421-64e17b56cbbd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNoJTIwZXhwbyUyMGZ1dHVyaXN0aWMlMjBkaXNwbGF5fGVufDF8fHx8MTc3MjI1ODAxMnww&ixlib=rb-4.1.0&q=80&w=1080",
-    time: "April 17", venue: "Main Atrium", team: "Individual / Team", prize: "Best Project Award",
-    rules: ["Register your booth in advance", "Demo must be self-contained", "Judges visit between 10am-4pm", "Poster required"],
-  },
-  {
-    id: 8, title: "Drone Racing", category: "Games",
-    desc: "High-speed FPV drone racing through an indoor obstacle course.",
-    image: "https://images.unsplash.com/photo-1759078634243-1d5325f49477?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkcm9uZSUyMHRlY2hub2xvZ3klMjBjb21wZXRpdGlvbnxlbnwxfHx8fDE3NzIyNTgwMTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    time: "April 16", venue: "Outdoor Arena", team: "Individual", prize: "$1500",
-    rules: ["Drone specs must comply with regulations", "Safety gear mandatory", "Practice runs available", "3 laps per heat"],
-  },
+  // {
+  //   id: 6, title: "Tech Expo", category: "Non-Technical",
+  //   desc: "Showcase of latest tech innovations, startups, and student projects.",
+  //   image: "https://images.unsplash.com/photo-1601571047421-64e17b56cbbd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNoJTIwZXhwbyUyMGZ1dHVyaXN0aWMlMjBkaXNwbGF5fGVufDF8fHx8MTc3MjI1ODAxMnww&ixlib=rb-4.1.0&q=80&w=1080",
+  //   time: "April 17", venue: "Main Atrium", team: "Individual / Team", prize: "Best Project Award",
+  //   rules: ["Register your booth in advance", "Demo must be self-contained", "Judges visit between 10am-4pm", "Poster required"],
+  // },
+  // {
+  //   id: 7, title: "Drone Racing", category: "Games",
+  //   desc: "High-speed FPV drone racing through an indoor obstacle course.",
+  //   image: "https://images.unsplash.com/photo-1759078634243-1d5325f49477?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkcm9uZSUyMHRlY2hub2xvZ3klMjBjb21wZXRpdGlvbnxlbnwxfHx8fDE3NzIyNTgwMTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+  //   time: "April 16", venue: "Outdoor Arena", team: "Individual", prize: "$1500",
+  //   rules: ["Drone specs must comply with regulations", "Safety gear mandatory", "Practice runs available", "3 laps per heat"],
+  // },
 ];
 
 export function Events() {
@@ -193,17 +186,17 @@ export function Events() {
                   <div className="text-xs text-muted-foreground mb-1">Venue</div>
                   <div className="text-sm text-foreground flex items-center gap-1"><MapPin className="w-3 h-3 text-white" /> {selectedEvent.venue}</div>
                 </div>
-                <div className="p-3 rounded-lg bg-muted">
+                {/* <div className="p-3 rounded-lg bg-muted">
                   <div className="text-xs text-muted-foreground mb-1">Team Size</div>
                   <div className="text-sm text-foreground flex items-center gap-1"><Users className="w-3 h-3 text-white" /> {selectedEvent.team}</div>
                 </div>
                 <div className="p-3 rounded-lg bg-muted">
                   <div className="text-xs text-muted-foreground mb-1">Prize</div>
                   <div className="text-sm text-foreground" style={{ fontWeight: 600 }}>{selectedEvent.prize}</div>
-                </div>
+                </div> */}
               </div>
 
-              <h4 className="text-foreground mb-3" style={{ fontWeight: 600 }}>Rules</h4>
+              {/* <h4 className="text-foreground mb-3" style={{ fontWeight: 600 }}>Rules</h4>
               <ul className="space-y-2 mb-6">
                 {selectedEvent.rules.map((rule, i) => (
                   <li key={i} className="text-sm text-muted-foreground flex items-start gap-2">
@@ -211,11 +204,11 @@ export function Events() {
                     {rule}
                   </li>
                 ))}
-              </ul>
+              </ul> */}
 
-              <button className="w-full py-3 rounded-xl text-white bg-gradient-to-r from-neon-purple to-neon-blue hover:opacity-90 transition-opacity">
+              {/* <button className="w-full py-3 rounded-xl text-white bg-gradient-to-r from-neon-purple to-neon-blue hover:opacity-90 transition-opacity">
                 Register for this Event
-              </button>
+              </button> */}
             </div>
           </div>
         </div>

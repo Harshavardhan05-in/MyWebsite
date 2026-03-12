@@ -56,11 +56,11 @@ const teamMembers = [
   },
   {
     id: 7,
-    name: "K Supriya",
+    name: "M Laharika",
     role: "Ideation and Creative",
     category: "Idea",
     image:
-      "https://images.unsplash.com/pshoto-176s2753674498-73ec49feafc4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5b3VuZyUyMG1hbiUyMHByb2Zlc3Npb25hbCUyMGhlYWRzaG90fGVufDF8fHx8MTc3MjI0NDI4MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "/team/laharika.jpeg",
   },
   {
     id: 8,
@@ -91,7 +91,7 @@ const teamMembers = [
     role: "Security",
     category: "Marketing",
     image:
-      "https://images.unsplash.com/photo-176252s2921456-cdfe882d36c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5b3VuZyUyMHdvbWFuJTIwcHJvZmVzc2lvbmFsJTIwaGVhZHNob3R8ZW58MXx8fHwxNzcyMjIyNjA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "/team/jeshwanth.jpeg",
   },
   {
     id: 12,
@@ -104,7 +104,7 @@ const teamMembers = [
    {
     id: 13,
     name: "M Yugandhar",
-    role: "Drafting & Content Writing",
+    role: "Technical & Photography",
     category: "Technical",
     image:
       "/team/yugabdhar.jpg",
@@ -123,7 +123,7 @@ const teamMembers = [
     role: "Decoration,Handicrafts & Art Gallery",
     category: "Marketing",
     image:
-      "https://images.unsplash.com/photo-1762s522921456-cdfe882d36c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5b3VuZyUyMHdvbWFuJTIwcHJvZmVzc2lvbmFsJTIwaGVhZHNob3R8ZW58MXx8fHwxNzcyMjIyNjA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "/team/shashikanth.jpeg",
   },
   {
     id: 16,
@@ -203,7 +203,7 @@ const teamMembers = [
     role: "Event Planning & Organising",
     category: "Technical",
     image:
-      "/team/gopikjhg.jpeg",
+      "/team/maneesh.jpeg",
   },
   ,
 ];
@@ -232,8 +232,8 @@ export function Teams() {
         {/* Team Groups */}
         <div className="space-y-10 mb-20">
           {[
-            { title: "Core Members", members: coreMembers },
-            { title: "Others", members: otherMembers },
+            { title: "Core Team", members: coreMembers },
+            { title: "Central Coordinators", members: otherMembers },
           ].map((group) => (
             <section key={group.title}>
               <h2

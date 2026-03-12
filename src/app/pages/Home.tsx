@@ -134,16 +134,7 @@ const featuredEvents = [
   },
 ];
 
-// const sponsors = [
-//   "TechCorp",
-//   "InnovateLabs",
-//   "FutureAI",
-//   "QuantumSoft",
-//   "CyberDyne",
-//   "NexGen",
-//   "DataFlow",
-//   "CloudPeak",
-// ];
+
 
 let hasShownIntroThisPageLoad = false;
 
@@ -250,13 +241,6 @@ export function Home() {
 
             <div className="flex flex-col sm:flex-row gap-4 mb-12 hero-cta">
               <Link
-                to="/register"
-                className="px-8 py-3 rounded-xl text-white bg-gradient-to-r from-neon-purple to-neon-blue hover:opacity-90 transition-opacity flex items-center justify-center gap-2"
-              >
-                <Rocket className="w-5 h-5" />
-                Register Now
-              </Link>
-              <Link
                 to="/events"
                 className="px-8 py-3 rounded-xl border border-border text-foreground hover:bg-muted transition-colors flex items-center justify-center gap-2"
               >
@@ -299,7 +283,7 @@ export function Home() {
       </section>
 
       {/* Featured Events */}
-      <section className="py-20">
+      {/* <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between mb-10">
             <div>
@@ -366,7 +350,7 @@ export function Home() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Quick Links */}
       <section className="py-20 bg-muted/20">
@@ -391,12 +375,12 @@ export function Home() {
                 to: "/projects",
                 icon: "🚀",
               },
-              // {
-              //   title: "Updates",
-              //   desc: "Stay on top of latest announcements",
-              //   to: "/updates",
-              //   icon: "📢",
-              // },
+              {
+                title: "Schedule",
+                desc: "Stay Updated",
+                to: "/schedule",
+                icon: "📢",
+              },
             ].map((item) => (
               <Link key={item.title} to={item.to}>
                 <GlassCard className="p-8 text-center">

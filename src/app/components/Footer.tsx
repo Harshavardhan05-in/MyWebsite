@@ -120,26 +120,6 @@ export function Footer() {
           <p className="text-sm text-muted-foreground">
             Antahpragnya 2026. All rights reserved.
           </p>
-          <div className="flex gap-6 text-sm text-muted-foreground">
-            <a
-              href="#"
-              className="hover:text-neon-blue transition-colors"
-            >
-              Privacy Policy
-            </a>
-            <a
-              href="#"
-              className="hover:text-neon-blue transition-colors"
-            >
-              Terms of Service
-            </a>
-            <a
-              href="#"
-              className="hover:text-neon-blue transition-colors"
-            >
-              Code of Conduct
-            </a>
-          </div>
         </div>
       </div>
     </footer>

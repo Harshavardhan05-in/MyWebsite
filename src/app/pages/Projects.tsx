@@ -12,234 +12,111 @@ const projectCategories = [
   "MECHANICAL",
   "MME",
   "EEE",
+  "IT"
 ];
 
 const projects = [
   {
     id: 1,
-    title: "EcoTrack AI",
+    title: "Smart Crop Disease Detection",
     category: "CSE",
-    desc: "AI-powered carbon footprint tracker that analyzes daily activities and suggests eco-friendly alternatives.",
+    desc: "",
     image:
-      "https://disabled-crimson-arkq9mdflz.edgeone.app/rgukt.jpeg",
-    team: ["Alice Johnson", "Bob Smith", "Carol Wu"],
-    techStack: ["Python", "TensorFlow", "React"],
+      "/projects/smartcrop.jpg",
+    team: ["Gopi Nadh", "Harshaa", "Venkata Satya Sai"],
+    techStack: ["Python", "PyTorch", "TensorFlow"],
   },
   {
     id: 2,
-    title: "Smart Campus Hub",
-    category: "ECE",
-    desc: "IoT-based campus management system with real-time room occupancy, energy monitoring, and smart scheduling.",
+    title: "AI Room",
+    category: "CSE",
+    desc: "",
     image:
-      "https://images.unsplash.com/photo-1739025738498-9caddd7ab489?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaXJjdWl0JTIwYm9hcmQlMjB0ZWNobm9sb2d5JTIwY2xvc2V1cHxlbnwxfHx8fDE3NzIyNTgwMjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    team: ["David Chen", "Eva Martinez"],
-    techStack: ["Arduino", "Node.js", "MQTT"],
+      "/projects/airoom.jpeg",
+    team: ["Gopi Nadh", "Harshaa", "Venkata Satya Sai"],
+    techStack: ["AI Tools"],
   },
   {
     id: 3,
-    title: "CodeCollab",
+    title: "AI Study Planner",
     category: "CSE",
-    desc: "Real-time collaborative code editor with integrated video chat, whiteboard, and version control.",
+    desc: "",
     image:
-      "https://images.unsplash.com/photo-1637937459053-c788742455be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMGNvZGluZyUyMHNjcmVlbnxlbnwxfHx8fDE3NzIyMjcyNTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    team: ["Frank Lee", "Grace Kim", "Henry Park"],
-    techStack: ["Next.js", "WebSocket", "PostgreSQL"],
+      "/projects/studyplanner.jpeg",
+    team: ["Sadiya Khan", "Sravani", "Vani"],
+    techStack: ["Gemini LLM", "Flask"],
   },
   {
     id: 4,
-    title: "RoboAssist",
-    category: "ECE",
-    desc: "Assistive robot companion for elderly care with fall detection, medication reminders, and emergency alerts.",
+    title: "Business Analyzer",
+    category: "CSE",
+    desc: "",
     image:
-      "https://images.unsplash.com/photo-1590038667005-7d82ac6f864b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyb2JvdGljcyUyMHdvcmtzaG9wJTIwdW5pdmVyc2l0eXxlbnwxfHx8fDE3NzIyNTgwMTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    team: ["Iris Wang", "Jake Miller"],
-    techStack: ["ROS", "Python", "Computer Vision"],
+      "/projects/bussinesanalyze.jpg",
+    team: ["Aksahya", "Ashwitha", "Vennela"],
+    techStack: ["WindSurf", "Gemini LLM"],
   },
   {
     id: 5,
-    title: "CryptoVote",
+    title: "EMORA",
     category: "CSE",
-    desc: "Decentralized voting platform ensuring transparent and tamper-proof elections for student organizations.",
+    desc: "",
     image:
-      "https://images.unsplash.com/photo-1769092186388-06be4308162b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjeWJlcnNlY3VyaXR5JTIwaGFja2luZyUyMGRhcmt8ZW58MXx8fHwxNzcyMjU4MDE0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-    team: ["Karen Davis", "Leo Zhang", "Maya Patel"],
-    techStack: ["Solidity", "Ethereum", "React"],
+      "/projects/emora.jpg",
+    team: ["Manognya", "Swathi", "Shruthi"],
+    techStack: ["Next.js", "WebSocket", "PostgreSQL"],
   },
   {
     id: 6,
-    title: "VR Campus Tour",
-    category: "CSE",
-    desc: "Virtual reality campus tour application for prospective students with interactive landmarks and info.",
+    title: "Bio Plastic",
+    category: "CHEMICAL",
+    desc: "Making Bio-Plastic from corn flour",
     image:
-      "https://images.unsplash.com/photo-1758273239313-6c703d089dd4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2aXJ0dWFsJTIwcmVhbGl0eSUyMGhlYWRzZXQlMjB0ZWNobm9sb2d5fGVufDF8fHx8MTc3MjI0ODkwMHww&ixlib=rb-4.1.0&q=80&w=1080",
-    team: ["Nina Foster", "Oscar Lee"],
-    techStack: ["Three.js", "WebXR", "Blender"],
+      "/projects/bioplastic.jpg",
+    team: ["Hima Bindhu", "Amuktha Malvada"],
+    techStack: [],
   },
   {
     id: 7,
-    title: "EcoTrack AI",
+    title: "Eco Friendly MultiLayer Water Filtration System",
     category: "CHEMICAL",
-    desc: "AI-powered carbon footprint tracker that analyzes daily activities and suggests eco-friendly alternatives.",
+    desc: "Eco-friendly Grey Water treatment system designed to remove surfactants and impurities",
     image:
-      "https://disabled-crimson-arkq9mdflz.edgeone.app/rgukt.jpeg",
-    team: ["Alice Johnson", "Bob Smith", "Carol Wu"],
-    techStack: ["Python", "TensorFlow", "React"],
+      "/projects/ecowater.jpg",
+    team: ["Akshaya", "Vaishnavi"],
+    techStack: [],
   },
   {
     id: 8,
-    title: "EcoTrack AI",
+    title: "Production of Bio Diesel from waste cooking oil",
     category: "CHEMICAL",
-    desc: "AI-powered carbon footprint tracker that analyzes daily activities and suggests eco-friendly alternatives.",
+    desc: "",
     image:
-      "https://disabled-crimson-arkq9mdflz.edgeone.app/rgukt.jpeg",
-    team: ["Alice Johnson", "Bob Smith", "Carol Wu"],
-    techStack: ["Python", "TensorFlow", "React"],
+      "/projects/biodiesel.jpg",
+    team: ["Ayesha Jalal", "Sana Shaik"],
+    techStack: [],
   },
   {
     id: 9,
-    title: "EcoTrack AI",
-    category: "CHEMICAL",
-    desc: "AI-powered carbon footprint tracker that analyzes daily activities and suggests eco-friendly alternatives.",
+    title: "Smart Street Light",
+    category: "IT",
+    desc: "",
     image:
-      "https://disabled-crimson-arkq9mdflz.edgeone.app/rgukt.jpeg",
-    team: ["Alice Johnson", "Bob Smith", "Carol Wu"],
-    techStack: ["Python", "TensorFlow", "React"],
+      "/projects/streetlight.jpg",
+    team: ["Jahnavi", "Karthika", "Nandhini", "Tapaswi"],
+    techStack: [],
   },
   {
     id: 10,
-    title: "EcoTrack AI",
-    category: "ECE",
-    desc: "AI-powered carbon footprint tracker that analyzes daily activities and suggests eco-friendly alternatives.",
+    title: "Sewage Clog Detector",
+    category: "IT",
+    desc: "",
     image:
-      "https://disabled-crimson-arkq9mdflz.edgeone.app/rgukt.jpeg",
-    team: ["Alice Johnson", "Bob Smith", "Carol Wu"],
-    techStack: ["Python", "TensorFlow", "React"],
+      "/projects/clog.png",
+    team: ["Harika", "Srujana", "Yashaswi", "Rishitha"],
+    techStack: ["Wifi Modules", "Sensors"],
   },
-  {
-    id: 11,
-    title: "EcoTrack AI",
-    category: "CIVIL",
-    desc: "AI-powered carbon footprint tracker that analyzes daily activities and suggests eco-friendly alternatives.",
-    image:
-      "https://disabled-crimson-arkq9mdflz.edgeone.app/rgukt.jpeg",
-    team: ["Alice Johnson", "Bob Smith", "Carol Wu"],
-    techStack: ["Python", "TensorFlow", "React"],
-  },
-  {
-    id: 12,
-    title: "EcoTrack AI",
-    category: "CIVIL",
-    desc: "AI-powered carbon footprint tracker that analyzes daily activities and suggests eco-friendly alternatives.",
-    image:
-      "https://disabled-crimson-arkq9mdflz.edgeone.app/rgukt.jpeg",
-    team: ["Alice Johnson", "Bob Smith", "Carol Wu"],
-    techStack: ["Python", "TensorFlow", "React"],
-  },
-  {
-    id: 13,
-    title: "EcoTrack AI",
-    category: "CIVIL",
-    desc: "AI-powered carbon footprint tracker that analyzes daily activities and suggests eco-friendly alternatives.",
-    image:
-      "https://disabled-crimson-arkq9mdflz.edgeone.app/rgukt.jpeg",
-    team: ["Alice Johnson", "Bob Smith", "Carol Wu"],
-    techStack: ["Python", "TensorFlow", "React"],
-  },
-  {
-    id: 14,
-    title: "EcoTrack AI",
-    category: "MECHANICAL",
-    desc: "AI-powered carbon footprint tracker that analyzes daily activities and suggests eco-friendly alternatives.",
-    image:
-      "https://disabled-crimson-arkq9mdflz.edgeone.app/rgukt.jpeg",
-    team: ["Alice Johnson", "Bob Smith", "Carol Wu"],
-    techStack: ["Python", "TensorFlow", "React"],
-  },{
-    id: 15,
-    title: "EcoTrack AI",
-    category: "MECHANICAL",
-    desc: "AI-powered carbon footprint tracker that analyzes daily activities and suggests eco-friendly alternatives.",
-    image:
-      "https://disabled-crimson-arkq9mdflz.edgeone.app/rgukt.jpeg",
-    team: ["Alice Johnson", "Bob Smith", "Carol Wu"],
-    techStack: ["Python", "TensorFlow", "React"],
-  },{
-    id: 16,
-    title: "EcoTrack AI",
-    category: "MECHANICAL",
-    desc: "AI-powered carbon footprint tracker that analyzes daily activities and suggests eco-friendly alternatives.",
-    image:
-      "https://disabled-crimson-arkq9mdflz.edgeone.app/rgukt.jpeg",
-    team: ["Alice Johnson", "Bob Smith", "Carol Wu"],
-    techStack: ["Python", "TensorFlow", "React"],
-  },{
-    id: 17,
-    title: "EcoTrack AI",
-    category: "CHEMICAL",
-    desc: "AI-powered carbon footprint tracker that analyzes daily activities and suggests eco-friendly alternatives.",
-    image:
-      "https://disabled-crimson-arkq9mdflz.edgeone.app/rgukt.jpeg",
-    team: ["Alice Johnson", "Bob Smith", "Carol Wu"],
-    techStack: ["Python", "TensorFlow", "React"],
-  },
-  {
-    id: 18,
-    title: "EcoTrack AI",
-    category: "MME",
-    desc: "AI-powered carbon footprint tracker that analyzes daily activities and suggests eco-friendly alternatives.",
-    image:
-      "https://disabled-crimson-arkq9mdflz.edgeone.app/rgukt.jpeg",
-    team: ["Alice Johnson", "Bob Smith", "Carol Wu"],
-    techStack: ["Python", "TensorFlow", "React"],
-  },{
-    id: 19,
-    title: "EcoTrack AI",
-    category: "MME",
-    desc: "AI-powered carbon footprint tracker that analyzes daily activities and suggests eco-friendly alternatives.",
-    image:
-      "https://disabled-crimson-arkq9mdflz.edgeone.app/rgukt.jpeg",
-    team: ["Alice Johnson", "Bob Smith", "Carol Wu"],
-    techStack: ["Python", "TensorFlow", "React"],
-  },{
-    id: 20,
-    title: "EcoTrack AI",
-    category: "MME",
-    desc: "AI-powered carbon footprint tracker that analyzes daily activities and suggests eco-friendly alternatives.",
-    image:
-      "https://disabled-crimson-arkq9mdflz.edgeone.app/rgukt.jpeg",
-    team: ["Alice Johnson", "Bob Smith", "Carol Wu"],
-    techStack: ["Python", "TensorFlow", "React"],
-  },
-  {
-    id: 21,
-    title: "EcoTrack AI",
-    category: "EEE",
-    desc: "AI-powered carbon footprint tracker that analyzes daily activities and suggests eco-friendly alternatives.",
-    image:
-      "https://disabled-crimson-arkq9mdflz.edgeone.app/rgukt.jpeg",
-    team: ["Alice Johnson", "Bob Smith", "Carol Wuuuie"],
-    techStack: ["Python", "TensorFlow", "React"],
-  },
-  {
-    id: 22,
-    title: "EcoTrack AI",
-    category: "EEE",
-    desc: "AI-powered carbon footprint tracker that analyzes daily activities and suggests eco-friendly alternatives.",
-    image:
-      "https://disabled-crimson-arkq9mdflz.edgeone.app/rgukt.jpeg",
-    team: ["Alice Johnson", "Bob Smith", "Carol Wu"],
-    techStack: ["Python", "TensorFlow", "React"],
-  },
-  {
-    id: 23,
-    title: "EcoTrack AI",
-    category: "EEE",
-    desc: "AI-powered carbon footprint tracker that analyzes daily activities and suggests eco-friendly alternatives.",
-    image:
-      "https://disabled-crimson-arkq9mdflz.edgeone.app/rgukt.jpeg",
-    team: ["Alice Johnson", "Bob Smith", "Carol Wu"],
-    techStack: ["Python", "TensorFlow", "React"],
-  },
+
 ];
 
 export function Projects() {
@@ -275,11 +152,10 @@ export function Projects() {
             <button
               key={cat}
               onClick={() => setFilter(cat)}
-              className={`px-4 py-2 rounded-lg text-sm transition-all ${
-                filter === cat
-                  ? "bg-gradient-to-r from-neon-purple to-neon-blue text-white"
-                  : "bg-muted text-muted-foreground hover:text-foreground"
-              }`}
+              className={`px-4 py-2 rounded-lg text-sm transition-all ${filter === cat
+                ? "bg-gradient-to-r from-neon-purple to-neon-blue text-white"
+                : "bg-muted text-muted-foreground hover:text-foreground"
+                }`}
             >
               {cat}
             </button>
@@ -333,14 +209,6 @@ export function Projects() {
                   <span>{project.team.join(", ")}</span>
                 </div>
 
-                {/* <div className="flex gap-3">
-                  <button className="flex-1 py-2 rounded-lg text-sm bg-secondary text-secondary-foreground hover:bg-secondary/80 flex items-center justify-center gap-1 transition-colors">
-                    <Github className="w-4 h-4" /> Code
-                  </button>
-                  <button className="flex-1 py-2 rounded-lg text-sm bg-gradient-to-r from-neon-purple to-neon-blue text-white hover:opacity-90 flex items-center justify-center gap-1 transition-opacity">
-                    <ExternalLink className="w-4 h-4" /> Demo
-                  </button>
-                </div> */}
               </div>
             </GlassCard>
           ))}

@@ -1,6 +1,6 @@
 import GuestCard from "../components/ui/guestcard"
 
-export const  Guests = () => {
+export const Guests = () => {
   const guests = [
     {
       name: "Prof. A. Govardhan",
@@ -8,16 +8,24 @@ export const  Guests = () => {
       role: "Chief Guest",
       image: "/guests/vc.jpeg",
       description:
-        "B.E.(CSE)(OU, Hyd), M.Tech(CS)(JNU, New Delhi), Ph.D(CSE)(JNTU, Hyd), PGDL(Leadership)(EMERITUS, Singapore),FIE, FCSI, C.Eng, FIETE, FISDS, FCSRC.MACM, MSIGKDD, SMIACSIT, MIAENG, MWASET, LMISTE, MFSF, MAAAS"
+        "B.E.(CSE)(OU, Hyd), M.Tech(CS)(JNU, New Delhi), Ph.D(CSE)(JNTU, Hyd), PGDL(Leadership)(EMERITUS, Singapore)"
     },
     {
       name: "Prof.E.Murali Dharshan",
       title: "Administrative Officer Rgukt Basar",
-      role: "Special Guest",
+      role: "Chief Guest",
       image: "/guests/osd.jpeg",
       description:
-        "Technology leader transforming the future of AI and cloud computing."
+        "Professor Emeritus at Indian Institute of Foreign Trade"
     },
+    {
+      "name": "Anil Geela",
+      "title": "Telugu YouTuber & Content Creator",
+      "role": "Special Guest",
+      "image": "/guests/anil.jpg",
+      "description": "Popular Telugu YouTuber known for engaging storytelling, relatable content, and creative videos that connect deeply with audiences across Andhra Pradesh and Telangana."
+    },
+
   ];
 
   return (

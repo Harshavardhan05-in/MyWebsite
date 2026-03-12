@@ -51,22 +51,6 @@ export function Navbar() {
               </Link>
             ))}
           </div>
-
-          <div className="hidden md:flex items-center gap-3">
-            {/* <Link
-              to="/admin"
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-            >
-              Admin
-            </Link> */}
-            <Link
-              to="/register"
-              className="px-5 py-2 rounded-lg text-sm text-white bg-gradient-to-r from-neon-purple to-neon-blue hover:opacity-90 transition-opacity"
-            >
-              Register Now
-            </Link>
-          </div>
-
           {/* Mobile menu button */}
           <button
             className="md:hidden p-2 text-foreground"
@@ -95,20 +79,7 @@ export function Navbar() {
                 {link.label}
               </Link>
             ))}
-            {/* <Link
-              to="/admin"
-              onClick={() => setMobileOpen(false)}
-              className="block px-3 py-2 text-sm text-muted-foreground hover:text-foreground"
-            >
-              Admin
-            </Link> */}
-            <Link
-              to="/register"
-              onClick={() => setMobileOpen(false)}
-              className="block w-full mt-2 px-5 py-2 rounded-lg text-sm text-white text-center bg-gradient-to-r from-neon-purple to-neon-blue"
-            >
-              Register Now
-            </Link>
+            
           </div>
         </div>
       )}

@@ -3,9 +3,9 @@ import { GlassCard } from "../components/GlassCard";
 import { Clock, MapPin, Users } from "lucide-react";
 
 const days = [
-  { label: "Day 1", date: "April 13" },
-  { label: "Day 2", date: "April 14" },
-  { label: "Day 3", date: "April 15" },
+  { label: "Day 1", date: "March 13" },
+  { label: "Day 2", date: "March 14" },
+  { label: "Day 3", date: "MArch 15" },
 ];
 
 type Session = {
@@ -42,7 +42,7 @@ const schedule: Record<string, Session[]> = {
       time: "9:00 AM - 5:00 PM",
       title: "VR GAMES",
       desc: "Experinece the Virtual Technology",
-      venue: "Food Court",
+      venue: "SAC YOGA HALL",
       type: "games",
     },
     {
@@ -103,7 +103,7 @@ const schedule: Record<string, Session[]> = {
     {
       time: "09:00 AM - 12:00 PM",
       title: "SHARK TANK",
-      desc: ".",
+      desc: "Business Ideas and Pitching",
       venue: "SAC AUDITORIUM",
       guests:"VC, OSD, AO, Conveners and other dignitaries",
       type: "event",
@@ -125,14 +125,14 @@ const schedule: Record<string, Session[]> = {
     {
       time: "07:00 PM - 11:00 PM",
       title: "CULTURAL NIGHT  along with CLOSING CEREMONY",
-      desc: ".....",
+      desc: "",
       venue: "Sathavahana Grounds",
       type: "ceremony",
     },
     {
       time: "11:00 PM - 12:00 PM",
       title: "DJ",
-      desc: "......",
+      desc: "",
       venue: "Shathavahana Grounds",
       type: "event",
     },
