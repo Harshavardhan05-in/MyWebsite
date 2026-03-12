@@ -48,11 +48,11 @@ const teamMembers = [
   },
   {
     id: 6,
-    name: "K Vijay",
+    name: "M Venkata Krishna",
     role: "Core Team",
     category: "Core",
     image:
-      "/team/vijay.jpg",
+      "/team/venkatakrishna.jpg",
   },
   {
     id: 7,
@@ -75,7 +75,7 @@ const teamMembers = [
     name: "H Dinesh",
     role: "Hospitality and Accommodation",
     category: "Marketing",
-    image:"/team/hospitaltyandAcc.jpg",
+    image: "/team/hospitaltyandAcc.jpg",
   },
   {
     id: 10,
@@ -101,7 +101,7 @@ const teamMembers = [
     image:
       "/team/saikrishna.jpeg",
   },
-   {
+  {
     id: 13,
     name: "M Yugandhar",
     role: "Technical & Photography",
@@ -143,11 +143,11 @@ const teamMembers = [
   },
   {
     id: 18,
-    name: "M Venkata Krishna",
+    name: "K Vijay",
     role: "Core Team",
     category: "Core",
     image:
-      "/team/venkatakrishna.jpg",
+      "/team/vijay.jpg",
   },
   {
     id: 19,
@@ -312,9 +312,9 @@ export function Teams() {
               </div>
               <div className="flex items-center gap-4">
                 <a href="https://www.google.com/maps/place/Basara+IIIT+Campus/@18.8815523,77.9191962,17z/data=!3m1!4b1!4m6!3m5!1s0x3bcde18c82d2cdb1:0x469505d0e802dd0c!8m2!3d18.8815523!4d77.9217711!16s%2Fm%2F04z_qjv?entry=ttu&g_ep=EgoyMDI2MDMwOC4wIKXMDSoASAFQAw%3D%3D" target="_main">
-                <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center">
-                  <MapPin className="w-5 h-5 text-white" />
-                </div>
+                  <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center">
+                    <MapPin className="w-5 h-5 text-white" />
+                  </div>
                 </a>
                 <div>
                   <div className="text-sm text-muted-foreground">

@@ -10,14 +10,14 @@ const events = [
     id: 1, title: "Baha Games", category: "Games",
     desc: "Design and build robots to compete in an arena battle. Strategy, engineering, and destruction await!",
     image: "/events/robots.jpg",
-    time: "March 14", venue: "SAC Auditorium",  
+    time: "March 14", venue: "SAC Auditorium",
     rules: ["Robot weight limit: 10kg", "No projectile weapons", "Remote controlled only", "3-minute rounds"],
   },
   {
     id: 2, title: "VR Games", category: "Games",
     desc: "Competitive gaming tournament featuring popular titles with massive prize pools.",
     image: "/events/vrgames.jpg",
-    time: "March 14", venue: "SAC Auditorium", 
+    time: "March 14", venue: "SAC Auditorium",
     rules: ["Bring your own peripherals", "Anti-cheat monitored", "Swiss format rounds", "Fair play policy enforced"],
   },
   {
@@ -91,11 +91,10 @@ export function Events() {
               <button
                 key={cat}
                 onClick={() => setFilter(cat)}
-                className={`px-4 py-2 rounded-lg text-sm transition-all ${
-                  filter === cat
+                className={`px-4 py-2 rounded-lg text-sm transition-all ${filter === cat
                     ? "bg-gradient-to-r from-neon-purple to-neon-blue text-white"
                     : "bg-muted text-muted-foreground hover:text-foreground"
-                }`}
+                  }`}
               >
                 {cat}
               </button>

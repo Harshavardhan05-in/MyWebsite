@@ -102,13 +102,13 @@ export function Footer() {
                 <span>+91 7337402527</span>
               </div>
               <a href="https://www.google.com/maps/place/Basara+IIIT+Campus/@18.8815523,77.9217711,17z/data=!3m1!4b1!4m6!3m5!1s0x3bcde18c82d2cdb1:0x469505d0e802dd0c!8m2!3d18.8815523!4d77.9217711!16s%2Fm%2F04z_qjv?entry=ttu&g_ep=EgoyMDI2MDMwOC4wIKXMDSoASAFQAw%3D%3D">
-              <div className="flex items-start gap-3 text-sm text-muted-foreground">
-                <MapPin className="w-4 h-4 text-white flex-shrink-0 mt-0.5" />
-                <span>
-                  Rajiv Gandhi University of Knowlwdge
-                  Technologies , Basar
-                </span>
-              </div>
+                <div className="flex items-start gap-3 text-sm text-muted-foreground">
+                  <MapPin className="w-4 h-4 text-white flex-shrink-0 mt-0.5" />
+                  <span>
+                    Rajiv Gandhi University of Knowlwdge
+                    Technologies , Basar
+                  </span>
+                </div>
               </a>
               <div className="flex items-start gap-3 text-sm text-muted-foreground">
               </div>
@@ -116,10 +116,75 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-6">
+
           <p className="text-sm text-muted-foreground">
             Antahpragnya 2026. All rights reserved.
           </p>
+
+          {/* Developers */}
+          <div className="flex flex-col items-center md:items-end gap-2">
+
+            <span className="text-xs text-muted-foreground tracking-wider uppercase">
+              Developed By
+            </span>
+
+            <div className="flex items-center gap-6">
+
+              {/* Developer 1 */}
+              <div className="flex items-center gap-2 group">
+                <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent font-semibold transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-[0_0_8px_rgba(56,189,248,0.8)]">
+                  Gopinadh
+                </span>
+
+
+                <a
+                  href="https://www.linkedin.com/in/gopinadh-telukondi-688b7a311?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="opacity-70 hover:opacity-100 transition"
+                >
+                  <Linkedin className="w-4 h-4 hover:text-blue-400" />
+                </a>
+              </div>
+
+              {/* Developer 2 */}
+              <div className="flex items-center gap-2 group">
+                <span className="bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent font-semibold transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-[0_0_8px_rgba(236,72,153,0.8)]">
+                  Harshaa
+                </span>
+
+                <a
+                  href="https://www.linkedin.com/in/harshavardhan-ushakola-630342328?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="opacity-70 hover:opacity-100 transition"
+                >
+                  <Linkedin className="w-4 h-4 hover:text-purple-400" />
+                </a>
+              </div>
+
+              {/* Developer 3 */}
+              <div className="flex items-center gap-2 group">
+                <span className="bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 bg-clip-text text-transparent font-semibold transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-[0_0_8px_rgba(16,185,129,0.8)]">
+                  Venkata Satya Sai
+                </span>
+
+
+
+                <a
+                  href="https://www.linkedin.com/in/venkatasatyasaiekkuluri?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="opacity-70 hover:opacity-100 transition"
+                >
+                  <Linkedin className="w-4 h-4 hover:text-teal-400" />
+                </a>
+              </div>
+
+            </div>
+          </div>
+
         </div>
       </div>
     </footer>
